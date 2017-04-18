@@ -2,9 +2,9 @@
     <wm-header name="header1" content="header"></wm-header>
     <wm-content name="content">
         <wm-page-content padding="unset 15px" columnwidth="12" name="mainContent">
-            <wm-livelist groupby="city" name="livelist2" navigation="Pager" dataset="bind:Variables.HrdbEmployeeData1.dataSet" listclass="list-group" template="true" itemsperrow="xs-1 sm-2 md-4 lg-6" class="list-card">
+            <wm-livelist name="livelist2" navigation="Pager" dataset="bind:Variables.HrdbEmployeeData1.dataSet" listclass="list-group" template="true" itemsperrow="xs-1 sm-2 md-4 lg-6" class="list-card">
                 <wm-listtemplate name="listtemplate2" layout="media">
-                    <wm-card name="Picture" picturesource="bind:Variables.HrdbEmployeeData1.dataSet.picurl">
+                    <wm-card subheading="Profile" title="Employee" name="Picture" picturesource="bind:Variables.HrdbEmployeeData1.dataSet.picurl">
                         <wm-card-content name="card_content2">
                             <wm-label caption="bind:Variables.HrdbEmployeeData1.dataSet.firstname" name="Name" margin="0px unset unset unset" class="h4" whitespace="nowrap"></wm-label>
                             <wm-layoutgrid name="layoutgrid2" columns="2">
