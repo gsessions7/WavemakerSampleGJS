@@ -2,43 +2,43 @@
     <wm-header name="header1" content="header"></wm-header>
     <wm-content name="content">
         <wm-page-content padding="unset 15px" columnwidth="12" name="mainContent">
-            <wm-livelist name="livelist1" navigation="Pager" dataset="bind:Variables.HrdbEmployeeData.dataSet" listclass="list-group" template="true" itemsperrow="xs-1 sm-2 md-4 lg-6" class="list-card">
-                <wm-listtemplate name="listtemplate1" layout="media">
-                    <wm-card name="Picture" picturesource="bind:Variables.HrdbEmployeeData.dataSet.picurl">
-                        <wm-card-content name="card_content1">
-                            <wm-label caption="bind:Variables.HrdbEmployeeData.dataSet.firstname" name="Name" margin="0px unset unset unset" class="h4" whitespace="nowrap"></wm-label>
-                            <wm-layoutgrid name="layoutgrid1" columns="2">
-                                <wm-gridrow name="gridrow1">
-                                    <wm-gridcolumn name="gridcolumn1" colwidth="6" columnwidth="2" horizontalalign="left">
-                                        <wm-icon name="icon1" iconclass="wi wi-contact-mail" iconsize="15pt" class="text-muted"></wm-icon>
+            <wm-livelist name="livelist2" navigation="Pager" dataset="bind:Variables.HrdbEmployeeData1.dataSet" listclass="list-group" template="true" itemsperrow="xs-1 sm-2 md-4 lg-6" class="list-card">
+                <wm-listtemplate name="listtemplate2" layout="media">
+                    <wm-card name="Picture" picturesource="bind:Variables.HrdbEmployeeData1.dataSet.picurl">
+                        <wm-card-content name="card_content2">
+                            <wm-label caption="bind:Variables.HrdbEmployeeData1.dataSet.firstname" name="Name" margin="0px unset unset unset" class="h4" whitespace="nowrap"></wm-label>
+                            <wm-layoutgrid name="layoutgrid2" columns="2">
+                                <wm-gridrow name="gridrow4">
+                                    <wm-gridcolumn name="gridcolumn7" colwidth="6" columnwidth="2" horizontalalign="left">
+                                        <wm-icon name="icon4" iconclass="wi wi-contact-mail" iconsize="15pt" class="text-muted"></wm-icon>
                                     </wm-gridcolumn>
-                                    <wm-gridcolumn name="gridcolumn2" colwidth="6" padding="unset unset unset 1.25em">
-                                        <wm-label name="ID" caption="bind:Variables.HrdbEmployeeData.dataSet.tenantId" fontunit="em" class="text-muted p" whitespace="nowrap"></wm-label>
-                                    </wm-gridcolumn>
-                                </wm-gridrow>
-                                <wm-gridrow name="gridrow2">
-                                    <wm-gridcolumn name="gridcolumn3" colwidth="6" columnwidth="2" horizontalalign="left">
-                                        <wm-icon name="icon2" iconclass="wi wi-user" iconsize="15pt" class="text-muted"></wm-icon>
-                                    </wm-gridcolumn>
-                                    <wm-gridcolumn name="gridcolumn4" colwidth="6" padding="unset unset unset 1.25em">
-                                        <wm-label name="JobTitle" caption="bind:Variables.HrdbEmployeeData.dataSet.jobTitle" fontunit="em" class="text-muted p"></wm-label>
+                                    <wm-gridcolumn name="gridcolumn8" colwidth="6" padding="unset unset unset 1.25em">
+                                        <wm-label name="ID" caption="ID" fontunit="em" class="text-muted p" whitespace="nowrap"></wm-label>
                                     </wm-gridcolumn>
                                 </wm-gridrow>
-                                <wm-gridrow name="gridrow3">
-                                    <wm-gridcolumn name="gridcolumn5" colwidth="6" columnwidth="2" horizontalalign="left">
-                                        <wm-icon name="icon3" iconclass="wi wi-dashboard" iconsize="15pt" class="text-muted"></wm-icon>
+                                <wm-gridrow name="gridrow5">
+                                    <wm-gridcolumn name="gridcolumn9" colwidth="6" columnwidth="2" horizontalalign="left">
+                                        <wm-icon name="icon5" iconclass="wi wi-user" iconsize="15pt" class="text-muted"></wm-icon>
                                     </wm-gridcolumn>
-                                    <wm-gridcolumn name="gridcolumn6" colwidth="6" padding="unset unset unset 1.25em">
-                                        <wm-label name="Department" caption="bind:Variables.HrdbEmployeeData.dataSet.department.name" fontunit="em" class="text-muted"></wm-label>
+                                    <wm-gridcolumn name="gridcolumn10" colwidth="6" padding="unset unset unset 1.25em">
+                                        <wm-label name="JobTitle" caption="bind:Variables.HrdbEmployeeData1.dataSet.jobTitle" fontunit="em" class="text-muted p"></wm-label>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                                <wm-gridrow name="gridrow6">
+                                    <wm-gridcolumn name="gridcolumn11" colwidth="6" columnwidth="2" horizontalalign="left">
+                                        <wm-icon name="icon6" iconclass="wi wi-dashboard" iconsize="15pt" class="text-muted"></wm-icon>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn name="gridcolumn12" colwidth="6" padding="unset unset unset 1.25em">
+                                        <wm-label name="Department" caption="bind:Variables.HrdbEmployeeData1.dataSet.data[$i].department.name" fontunit="em" class="text-muted"></wm-label>
                                     </wm-gridcolumn>
                                 </wm-gridrow>
                             </wm-layoutgrid>
                         </wm-card-content>
-                        <wm-card-footer name="card_footer1" horizontalalign="center">
-                            <wm-buttongroup name="buttongroup1" class="btn-group-justified" horizontalalign="center">
-                                <wm-anchor name="anchor1" class="btn btn-transparent text-muted" caption="" iconclass="wi wi-mail" fontsize="18" fontunit="pt"></wm-anchor>
-                                <wm-anchor name="anchor2" class="btn btn-transparent" caption="" iconclass="wi wi-call" fontsize="18" fontunit="pt"></wm-anchor>
-                                <wm-anchor name="anchor3" class="btn btn-transparent" caption="" iconclass="wi wi-location-on" fontsize="18" fontunit="pt"></wm-anchor>
+                        <wm-card-footer name="card_footer2" horizontalalign="center">
+                            <wm-buttongroup name="buttongroup2" class="btn-group-justified" horizontalalign="center">
+                                <wm-anchor name="anchor4" class="btn btn-transparent text-muted" caption="" iconclass="wi wi-mail" fontsize="18" fontunit="pt"></wm-anchor>
+                                <wm-anchor name="anchor5" class="btn btn-transparent" caption="" iconclass="wi wi-call" fontsize="18" fontunit="pt"></wm-anchor>
+                                <wm-anchor name="anchor6" class="btn btn-transparent" caption="" iconclass="wi wi-location-on" fontsize="18" fontunit="pt"></wm-anchor>
                             </wm-buttongroup>
                         </wm-card-footer>
                     </wm-card>
